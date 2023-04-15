@@ -12,6 +12,7 @@ My first godot project
 - Create a "neck" so the player can look around using the mouse
 <br/>
 - Followed [this tutorial](https://www.youtube.com/watch?v=v4IEPi1c0eE)
+
 ---
 
 ### What I want to do:
