@@ -12,6 +12,8 @@ My first godot project
 - Give the player the ability to move(used a template)
 - Create a "neck" so the player can look around using the mouse
 
+![image](https://user-images.githubusercontent.com/74153584/232189184-2a30ed81-98ff-4102-a463-bd924e6cf735.png)
+
 ---
 
 ### What I want to do:
