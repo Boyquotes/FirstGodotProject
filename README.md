@@ -11,7 +11,6 @@ My first godot project
 - Give the player the ability to move(used a template)
 - Create a "neck" so the player can look around using the mouse
 <br/>
-- Followed [this tutorial](https://www.youtube.com/watch?v=v4IEPi1c0eE/)
 
 ---
 
