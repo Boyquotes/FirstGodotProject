@@ -22,8 +22,13 @@ tonemap_mode = 2
 albedo_texture = ExtResource("1_iovy3")
 roughness_texture = ExtResource("4_p8e3t")
 normal_enabled = true
+normal_scale = 2.0
 normal_texture = ExtResource("2_tpuu2")
 heightmap_enabled = true
+heightmap_scale = 3.0
+heightmap_deep_parallax = true
+heightmap_min_layers = 8
+heightmap_max_layers = 32
 heightmap_texture = ExtResource("2_cmvbv")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_k7g60"]
@@ -70,3 +75,4 @@ shape = SubResource("ConvexPolygonShape3D_y1qn6")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7594, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CharacterBody3D/Neck"]
+transform = Transform3D(1, 0, 0, 0, 0.950749, 0.309963, 0, -0.309963, 0.950749, 0, 0.604894, 2.08037)
