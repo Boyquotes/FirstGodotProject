@@ -1,6 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://qary25k157t0"]
+[gd_scene load_steps=14 format=3 uid="uid://qary25k157t0"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_g5ilt"]
+[ext_resource type="Texture2D" uid="uid://bidstujljgwnv" path="res://GrungeWall03_MR_4K/GrungeWall03_4K_BaseColor.png" id="1_iovy3"]
+[ext_resource type="Texture2D" uid="uid://y1iks6w27swt" path="res://GrungeWall03_MR_4K/GrungeWall03_4K_Height.png" id="2_cmvbv"]
+[ext_resource type="Texture2D" uid="uid://sdp8v15a1q6" path="res://GrungeWall03_MR_4K/GrungeWall03_4K_Normal.png" id="2_tpuu2"]
+[ext_resource type="Texture2D" uid="uid://bly5aoc1ssl2x" path="res://GrungeWall03_MR_4K/GrungeWall03_4K_Roughness.png" id="4_p8e3t"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pwvd5"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -14,7 +18,16 @@ background_mode = 2
 sky = SubResource("Sky_0r32f")
 tonemap_mode = 2
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oyd4h"]
+albedo_texture = ExtResource("1_iovy3")
+roughness_texture = ExtResource("4_p8e3t")
+normal_enabled = true
+normal_texture = ExtResource("2_tpuu2")
+heightmap_enabled = true
+heightmap_texture = ExtResource("2_cmvbv")
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_k7g60"]
+material = SubResource("StandardMaterial3D_oyd4h")
 size = Vector2(20, 20)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_padjw"]
@@ -31,7 +44,7 @@ points = PackedVector3Array(-0.125207, -0.532801, -0.480507, 0.0227831, 0.47607,
 environment = SubResource("Environment_6tcsa")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+transform = Transform3D(-0.128948, 0.754845, 0.643103, 0.467876, -0.525485, 0.710604, 0.874337, 0.392523, -0.285414, 5.76154, 7.51032, -3.23191)
 shadow_enabled = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
