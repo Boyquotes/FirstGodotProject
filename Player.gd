@@ -3,6 +3,8 @@ extends CharacterBody3D
 
 const SPEED = 8.0
 const JUMP_VELOCITY = 5.5
+const MAX_SPEED = 12.0
+const MAX_ACCEL = 10 * MAX_SPEED # Accel to MAX_SPEED in 0.1s
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -21,13 +23,14 @@ func _unhandled_input(event):
 			camera.rotate_x(-event.relative.y * 0.01)
 			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-30), deg_to_rad(60))
 
+
 func _physics_process(delta):
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 
 	# Handle Jump.	
-	if Input.is_action_just_pressed("ui_accept"):
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.

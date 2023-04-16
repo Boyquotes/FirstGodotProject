@@ -1,2 +1,3 @@
 res://FirstGame.tscn
 res://Player.gd
+res://StateMachine.gd
