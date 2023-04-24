@@ -1,9 +1,10 @@
 2a60927148abd1d33b818b535e306557
-::res://::1681597809
-FirstGame.tscn::PackedScene::1124098011104167663::1681581510::0::1::::<><>::res://Player.gd<>uid://bidstujljgwnv<>uid://y1iks6w27swt<>uid://sdp8v15a1q6<>uid://bly5aoc1ssl2x
+::res://::1681744199
+FirstGame.tscn::PackedScene::1124098011104167663::1681744141::0::1::::<><>::res://Player.gd<>uid://bidstujljgwnv<>uid://y1iks6w27swt<>uid://sdp8v15a1q6<>uid://bly5aoc1ssl2x
 icon.svg::CompressedTexture2D::4289852364349016081::1681527283::1681527303::1::::<><>::
-Player.gd::GDScript::-1::1681581467::0::1::::<>CharacterBody3D<>::
+Player.gd::GDScript::-1::1681600151::0::1::::<>CharacterBody3D<>::
 README.md::TextFile::-1::1681578003::0::1::::<><>::
+StateMachine.gd::GDScript::-1::1681600903::0::1::::StateMachine<>Node<>::
 ::res://GrungeWall03_MR_4K/::1681577336
 GrungeWall03_4K_AO.png::CompressedTexture2D::8799351215294457700::1681576572::1681576583::1::::<><>::
 GrungeWall03_4K_BaseColor.png::CompressedTexture2D::2955252466895849863::1681576572::1681577007::1::::<><>::
